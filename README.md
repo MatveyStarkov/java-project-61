@@ -6,3 +6,4 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=MatveyStarkov_java-project-61&metric=bugs)](https://sonarcloud.io/summary/new_code?id=MatveyStarkov_java-project-61)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=MatveyStarkov_java-project-61&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=MatveyStarkov_java-project-61)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MatveyStarkov_java-project-61&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=MatveyStarkov_java-project-61)
+[![asciicast](https://asciinema.org/a/apqfcqjAqkNPHWOKPaPPBHXE2.svg)](https://asciinema.org/a/apqfcqjAqkNPHWOKPaPPBHXE2)
