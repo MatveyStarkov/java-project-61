@@ -3,8 +3,8 @@ package hexlet.code.games;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Calc {
-    public static void calcGame() {
+public class Gcd {
+    public static void gcdGame() {
         System.out.println("Welcome to the Brain Games");
         Scanner scanner = new Scanner(System.in);
         System.out.println("May I have your name?");
@@ -13,28 +13,18 @@ public class Calc {
         Random random = new Random();
         int questions = 3;
         int i = 0;
-        System.out.println("What is the result of the expression?");
-        while (i < questions) {
+        System.out.println("Find the greatest common divisor of given numbers.");
+        while (i < questions){
             int num1 = random.nextInt(10);
             int num2 = random.nextInt(10);
-            int operator = random.nextInt(3);
             int correct = 0;
-            switch (operator) {
-                case 0:
-                    System.out.println("Question: " + num1 + " + " + num2);
-                    correct = num1 + num2;
-                    break;
-                case 1:
-                    System.out.println("Question: " + num1 + " - " + num2);
-                    correct = num1 - num2;
-                    break;
-                case 2:
-                    System.out.println("Question: " + num1 + " * " + num2);
-                    correct = num1 * num2;
-                    break;
-                default:
-                    break;
+            System.out.println("Question: " + num1 + " " + num2);
+            while (num2 != 0) {
+                int ostatok = num1 % num2;
+                num1 = num2;
+                num2 = ostatok;
             }
+            correct = num1;
             System.out.print("Answer: ");
             int answer = scanner.nextInt();
             if (answer == correct) {
