@@ -6,7 +6,7 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=MatveyStarkov_java-project-61&metric=bugs)](https://sonarcloud.io/summary/new_code?id=MatveyStarkov_java-project-61)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=MatveyStarkov_java-project-61&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=MatveyStarkov_java-project-61)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MatveyStarkov_java-project-61&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=MatveyStarkov_java-project-61)
-[![asciicast](https://asciinema.org/a/apqfcqjAqkNPHWOKPaPPBHXE2.svg)](https://asciinema.org/a/apqfcqjAqkNPHWOKPaPPBHXE2)
+[![asciicast](https://asciinema.org/a/AfsPrc4rloUbZPgljcPWdqjMD.svg)](https://asciinema.org/a/AfsPrc4rloUbZPgljcPWdqjMD)
 [![asciicast](https://asciinema.org/a/LAiFzeENVsXw56yIhTQ6F0Okh.svg)](https://asciinema.org/a/LAiFzeENVsXw56yIhTQ6F0Okh)
 [![asciicast](https://asciinema.org/a/73SDGrJdU2pO3EeZFZGJ414gc.svg)](https://asciinema.org/a/73SDGrJdU2pO3EeZFZGJ414gc)
 [![asciicast](https://asciinema.org/a/Q5XsMj8a1H0Xblddt9xG7IVsC.svg)](https://asciinema.org/a/Q5XsMj8a1H0Xblddt9xG7IVsC)
