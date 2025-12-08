@@ -8,7 +8,7 @@ import java.util.Random;
 public class Even {
     public static void evenGame() {
         Random random = new Random();
-        String[][] roundsData = new String[3][2];
+        String[][] rounds = new String[3][2];
         for (int i = 0; i < 3; i++) {
             int num = random.nextInt(99) + 1;  // от 1 до 99
             String question = String.valueOf(num);
@@ -18,11 +18,11 @@ public class Even {
             } else {
                 correctAnswer = "no";
             }
-            roundsData[i][0] = question;
-            roundsData[i][1] = correctAnswer;
+            rounds[i][0] = question;
+            rounds[i][1] = correctAnswer;
         }
-        String description = "Answer 'yes' if the number is even, otherwise answer 'no'";
-        Engine.run(description, roundsData);
+        String gameQuestion = "Answer 'yes' if the number is even, otherwise answer 'no'";
+        Engine.run(gameQuestion, rounds);
     }
 }
 

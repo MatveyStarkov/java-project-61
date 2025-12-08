@@ -23,7 +23,7 @@ public class Gcd {
             rounds[i][0] = question;
             rounds[i][1] = String.valueOf(correct);
         }
-        String question = "Find the greatest common divisor of given numbers.";
-        Engine.run(question, rounds);
+        String gameQuestion = "Find the greatest common divisor of given numbers.";
+        Engine.run(gameQuestion, rounds);
     }
 }

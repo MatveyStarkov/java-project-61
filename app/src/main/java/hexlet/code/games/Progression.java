@@ -40,7 +40,7 @@ public class Progression {
             rounds[i][1] = String.valueOf(correct);
         }
 
-        String description = "What number is missing in the progression?";
-        Engine.run(description, rounds);
+        String gameQuestion = "What number is missing in the progression?";
+        Engine.run(gameQuestion, rounds);
     }
 }

@@ -33,8 +33,8 @@ public class Calc {
             rounds[i][1] = String.valueOf(correct);
         }
 
-        String question = "What is the result of the expression?";
-        Engine.run(question, rounds);
+        String gameQuestion = "What is the result of the expression?";
+        Engine.run(gameQuestion, rounds);
 
     }
 }
