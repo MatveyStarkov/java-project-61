@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        System.out.println("Welcome to the Brain Games!");
         System.out.println("Please enter the game number and press Enter");
         Scanner scanner = new Scanner(System.in);
         System.out.println("1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
@@ -33,7 +34,9 @@ public class App {
                 break;
             case "6":
                 Prime.primeGame();
+                break;
             default:
+                System.out.println("Unknow command " + x);
                 break;
         }
     }

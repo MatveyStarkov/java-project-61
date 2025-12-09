@@ -27,6 +27,7 @@ public class Calc {
                     correct = num1 * num2;
                     break;
                 default:
+                    System.out.println("Wrong operation");
                     break;
             }
             rounds[i][0] = question;                  // вопрос
