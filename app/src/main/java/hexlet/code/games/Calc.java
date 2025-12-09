@@ -5,6 +5,22 @@ import java.util.Random;
 
 
 public class Calc {
+    public static final String DESCRIPTION = "What is the result of the expression?";
+
+    public static int calculate(char op, int num1, int num2) {
+        switch (op) {
+            case '+':
+                return num1 + num2;
+            case '-':
+                return num1 - num2;
+            case '*':
+                return num1 * num2;
+            default:
+                System.out.println("Wrong operation");
+                return 0;
+        }
+    }
+
     public static void calcGame() {
         Random random = new Random();
         String[][] rounds = new String[3][2];
@@ -15,27 +31,12 @@ public class Calc {
             int index = random.nextInt(operators.length); // 0..2
             char op = operators[index];
             String question = num1 + " " + op + " " + num2;
-            int correct = 0;
-            switch (op) {
-                case '+':
-                    correct = num1 + num2;
-                    break;
-                case '-':
-                    correct = num1 - num2;
-                    break;
-                case '*':
-                    correct = num1 * num2;
-                    break;
-                default:
-                    System.out.println("Wrong operation");
-                    break;
-            }
+
+            int correct = calculate(op, num1, num2);
+
             rounds[i][0] = question;                  // вопрос
             rounds[i][1] = String.valueOf(correct);
         }
-
-        String gameQuestion = "What is the result of the expression?";
-        Engine.run(gameQuestion, rounds);
-
+        Engine.run(DESCRIPTION, rounds);
     }
 }

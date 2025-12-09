@@ -5,6 +5,19 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Gcd {
+    public static final String DESCRIPTION = "Find the greatest common divisor of given numbers.";
+
+    private static int gcd(int num1, int num2) {
+        int a = num1;
+        int b = num2;
+        while (b != 0) {
+            int remainder = a % b;
+            a = b;
+            b = remainder;
+        }
+        return a;
+    }
+
     public static void gcdGame() {
         Random random = new Random();
         String[][] rounds = new String[3][2];
@@ -12,18 +25,11 @@ public class Gcd {
             int num1 = random.nextInt(10) + 1; // можно +1, чтобы избежать 0
             int num2 = random.nextInt(10) + 1;
             String question = num1 + " " + num2;
-            int a = num1;
-            int b = num2;
-            while (b != 0) {
-                int remainder = a % b;
-                a = b;
-                b = remainder;
-            }
-            int correct = a;
+            int correct = gcd(num1, num2);
             rounds[i][0] = question;
             rounds[i][1] = String.valueOf(correct);
         }
-        String gameQuestion = "Find the greatest common divisor of given numbers.";
-        Engine.run(gameQuestion, rounds);
+
+        Engine.run(DESCRIPTION, rounds);
     }
 }

@@ -5,10 +5,14 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Progression {
-    private static int[] build(int start, int step, int length) {
-        int[] progression = new int[length];
+
+    public static final String DESCRIPTION = "What number is missing in the progression?";
+
+    private static String[] build(int start, int step, int length) {
+        String[] progression = new String[length];
         for (int i = 0; i < length; i++) {
-            progression[i] = start + i * step;
+            int x = start + i * step;
+            progression[i] = String.valueOf(x);
         }
         return progression;
     }
@@ -21,26 +25,14 @@ public class Progression {
             int start = random.nextInt(10) + 1;
             int step = random.nextInt(10) + 1;
             int length = 10;
-            int[] progression = build(start, step, length);
+            String[] progression = build(start, step, length);
             int hidden = random.nextInt(length);
-            int correct = progression[hidden];
-            StringBuilder questionBuilder = new StringBuilder();
-            for (int j = 0; j < length; j++) {
-                if (j == hidden) {
-                    questionBuilder.append("..");
-                } else {
-                    questionBuilder.append(progression[j]);
-                }
-                if (j < length - 1) {
-                    questionBuilder.append(" ");
-                }
-            }
-            String question = questionBuilder.toString();
+            String correct = progression[hidden];
+            progression[hidden] = "..";
+            String question = String.join(" ", progression);
             rounds[i][0] = question;
-            rounds[i][1] = String.valueOf(correct);
+            rounds[i][1] = correct;
         }
-
-        String gameQuestion = "What number is missing in the progression?";
-        Engine.run(gameQuestion, rounds);
+        Engine.run(DESCRIPTION, rounds);
     }
 }

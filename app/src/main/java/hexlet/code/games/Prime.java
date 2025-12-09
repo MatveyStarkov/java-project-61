@@ -5,6 +5,8 @@ import java.util.Random;
 
 public class Prime {
 
+    public static final String DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+
     private static boolean isPrime(int n) {
         if (n < 2) {
             return false;
@@ -30,7 +32,6 @@ public class Prime {
             rounds[i][1] = correct;
         }
 
-        String gameQuestion = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-        Engine.run(gameQuestion, rounds);
+        Engine.run(DESCRIPTION, rounds);
     }
 }
