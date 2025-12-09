@@ -27,7 +27,7 @@ public class Calc {
         Random random = new Random();
         String[][] rounds = new String[TOTAL_ROUNDS][2];
         char[] operators = {'+', '-', '*'};
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < TOTAL_ROUNDS; i++) {
             int num1 = random.nextInt(MAX_NUMBER);
             int num2 = random.nextInt(MAX_NUMBER);
             int index = random.nextInt(operators.length); // 0..2

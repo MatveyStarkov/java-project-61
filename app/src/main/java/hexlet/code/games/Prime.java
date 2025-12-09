@@ -26,7 +26,7 @@ public class Prime {
         Random random = new Random();
         String[][] rounds = new String[TOTAL_ROUNDS][2];
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < TOTAL_ROUNDS; i++) {
             int num = random.nextInt(MAX_NUMBER) + 1;
             String question = String.valueOf(num);
             String correct = isPrime(num) ? "yes" : "no";

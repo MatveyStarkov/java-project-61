@@ -23,7 +23,7 @@ public class Gcd {
     public static void gcdGame() {
         Random random = new Random();
         String[][] rounds = new String[TOTAL_ROUNDS][2];
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < TOTAL_ROUNDS; i++) {
             int num1 = random.nextInt(MAX_NUMBER) + 1; // можно +1, чтобы избежать 0
             int num2 = random.nextInt(MAX_NUMBER) + 1;
             String question = num1 + " " + num2;
